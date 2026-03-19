@@ -21,7 +21,7 @@ import { AppSidebar } from "./components/app-sidebar";
 import { SidebarProvider, SidebarTrigger } from "./components/ui/sidebar";
 import { useAuth } from "./hooks/use-auth";
 import { useQuery } from "@tanstack/react-query";
-import { getQueryFn } from "@/lib/queryClient";
+import { getQueryFn } from "./lib/queryClient";
 import { Building2, RefreshCw, AlertTriangle } from "lucide-react";
 
 // ─── Error Boundary ────────────────────────────────────────────────────────────
