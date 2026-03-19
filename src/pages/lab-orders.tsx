@@ -35,7 +35,7 @@ import { queryClient, apiRequest } from "@/lib/queryClient";
 import { type Frame, type LabOrder } from "@shared/schema";
 import { VISION_PLAN_OPTIONS } from "@/lib/constants";
 import { useToast } from "@/hooks/use-toast";
-import { useSearch } from "wouter";
+import { useSearch } from "wouter/use-location";
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";

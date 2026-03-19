@@ -1,0 +1,495 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0KSeed error: error: relation "manufacturers" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async <anonymous> [90m(/home/runner/workspace/[39mnode_modules/[4msrc[24m/node-postgres/session.ts:104:19[90m)[39m
+    at async DbStorage.manufacturersExist [90m(/home/runner/workspace/[39mserver/storage.ts:526:20[90m)[39m
+    at async seedDatabase [90m(/home/runner/workspace/[39mserver/seed.ts:155:28[90m)[39m
+    at async <anonymous> [90m(/home/runner/workspace/[39mserver/index.ts:119:5[90m)[39m {
+  length: [33m112[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'40'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Frame sync error: error: function to_char(jsonb, unknown) does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async <anonymous> [90m(/home/runner/workspace/[39mnode_modules/[4msrc[24m/node-postgres/session.ts:104:19[90m)[39m
+    at async DbStorage.syncAllFramesFromLabOrders [90m(/home/runner/workspace/[39mserver/storage.ts:815:18[90m)[39m
+    at async <anonymous> [90m(/home/runner/workspace/[39mserver/index.ts:125:5[90m)[39m {
+  length: [33m217[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No function matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'143'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_func.c'[39m,
+  line: [32m'629'[39m,
+  routine: [32m'ParseFuncOrColumn'[39m
+}
+Manufacturer fix error: error: relation "manufacturers" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async DbStorage.fixManufacturerData [90m(/home/runner/workspace/[39mserver/storage.ts:1005:5[90m)[39m
+    at async <anonymous> [90m(/home/runner/workspace/[39mserver/index.ts:131:5[90m)[39m {
+  length: [33m112[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'87'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+3:24:17 AM [express] serving on port 5000
+Internal Server Error: error: operator does not exist: jsonb >= timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m218[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'54'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Internal Server Error: error: operator does not exist: jsonb >= timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m218[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'54'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Internal Server Error: error: operator does not exist: jsonb >= timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m218[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'54'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Failed to prune sessions: error: operator does not exist: jsonb < timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m217[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'36'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Internal Server Error: error: operator does not exist: jsonb >= timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m218[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'54'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Internal Server Error: error: operator does not exist: jsonb >= timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m218[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'54'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Internal Server Error: error: operator does not exist: jsonb >= timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m218[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'54'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Internal Server Error: error: operator does not exist: jsonb >= timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m218[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'54'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Internal Server Error: error: operator does not exist: jsonb >= timestamp with time zone
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m218[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42883'[39m,
+  detail: [90mundefined[39m,
+  hint: [32m'No operator matches the given name and argument types. You might need to add explicit type casts.'[39m,
+  position: [32m'54'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_oper.c'[39m,
+  line: [32m'635'[39m,
+  routine: [32m'op_error'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Failed to prune sessions: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'13'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}
+Internal Server Error: error: relation "session" does not exist
+    at [90m/home/runner/workspace/[39mnode_modules/[4mpg-pool[24m/index.js:45:11
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at async PGStore._asyncQuery [90m(/home/runner/workspace/[39mnode_modules/[4mconnect-pg-simple[24m/index.js:322:21[90m)[39m {
+  length: [33m106[39m,
+  severity: [32m'ERROR'[39m,
+  code: [32m'42P01'[39m,
+  detail: [90mundefined[39m,
+  hint: [90mundefined[39m,
+  position: [32m'18'[39m,
+  internalPosition: [90mundefined[39m,
+  internalQuery: [90mundefined[39m,
+  where: [90mundefined[39m,
+  schema: [90mundefined[39m,
+  table: [90mundefined[39m,
+  column: [90mundefined[39m,
+  dataType: [90mundefined[39m,
+  constraint: [90mundefined[39m,
+  file: [32m'parse_relation.c'[39m,
+  line: [32m'1449'[39m,
+  routine: [32m'parserOpenTable'[39m
+}

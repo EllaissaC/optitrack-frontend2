@@ -1,0 +1,17 @@
+--> npm install
+[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K
+up to date, audited 527 packages in 2s
+[1G[0K⠙[1G[0K
+[1G[0K⠙[1G[0K83 packages are looking for funding
+[1G[0K⠙[1G[0K  run `npm fund` for details
+[1G[0K⠙[1G[0K
+[31m[1m5[22m[39m vulnerabilities (1 [1mlow[22m, 1 [33m[1mmoderate[22m[39m, 3 [31m[1mhigh[22m[39m)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+[1G[0K⠙[1G[0K
